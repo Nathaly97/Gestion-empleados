@@ -14,7 +14,7 @@ app.use(express.json());// método que ayuda a convertir el código para que el 
 app.use(cors({origin:'http://localhost:4200'})); //CORS permite que nuestro servidor acepte solicitudes desde otra dirección. Aquí estamos diciendo que solo acepta peticiones desde http://localhost:4200(Angular suele usar ese puerto). 
 
 // rutas de nuestro servidor
-app.use('/api/empleados',require('./routes/empleado.routes')); //Definimos la URL base para la parte de empleados.require('./routes/empleado.routes')importa un archivo donde están todas las rutas para manejar empleados (listar, agregar, eliminar, etc.).
+app.use('/api/empleados',require('./routes/empleado.route')); //Definimos la URL base para la parte de empleados.require('./routes/empleado.routes')importa un archivo donde están todas las rutas para manejar empleados (listar, agregar, eliminar, etc.).
 
 
 // Iniciar el servidor
