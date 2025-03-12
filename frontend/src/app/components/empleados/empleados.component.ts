@@ -14,7 +14,7 @@ constructor(public empleadoService: EmpleadoService) { }
 ngOnInit(): void {
 }
 agregarEmpleado(form?: NgForm) {
-this.empleadoService.PostEmpleado(form?.value)
+this.empleadoService.postEmpleado(form?.value)
 .subscribe(res => {
 this. resetForm(form);
 M.toast({html: 'Guardado satisfactoriamente'});
